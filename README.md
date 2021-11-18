@@ -28,14 +28,14 @@ The goal is to select the correct letter with its respective color.
 
 ---
 
----
-
 ### Task List
 
 []Obtain Project Approval
 []Review Trello Board
 []Create brand/logo
 []Create wireframes
+
+---
 
 ### Credits
 
