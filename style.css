@@ -18,6 +18,9 @@ body {
   max-height: 95vh;
   max-width: 95vw;
 }
+content {
+  background-color: #99bbe0;
+}
 
 .mainLayout {
   display: inline-block;
@@ -47,10 +50,17 @@ b {
 }
 
 a {
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
+  color: black;
 }
 
-button {
+.navMenu {
+  background-color: #9bc4c0;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
 }
