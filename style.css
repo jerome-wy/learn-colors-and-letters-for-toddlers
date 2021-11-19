@@ -1,11 +1,12 @@
 :root {
   --bgcolor: #7090b1;
-  --square0: #0e9c2c;
-  --square1: #fe0000;
-  --square2: #0d0ddf;
-  --square3: #7b48c9;
-  --square4: #fa8116;
-  --square5: #fff601;
+  --bgcolor2: #99bbe0;
+  --square0: rgb(123, 72, 201);
+  --square1: rgb(14, 156, 44);
+  --square2: rgb(250, 129, 22);
+  --square3: rgb(13, 13, 223);
+  --square4: rgb(255, 246, 1);
+  --square5: rgb(254, 0, 0);
 }
 
 @media (max-width: 375px) {
@@ -14,7 +15,7 @@
   }
 
   .container {
-    max-width: 375px;
+    max-width: 475px;
     max-height: 812px;
   }
 }
@@ -25,6 +26,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   font-family: 'Chelsea Market';
+  max-height: 872px;
 }
 
 #banner {
@@ -39,27 +41,55 @@ body {
   margin: 0 auto;
   width: 90vw;
   max-height: 95vh;
-  max-width: 95vw;
-  border: solid 1px black;
+  max-width: 475px;
+  /* border: solid 1px black; */
   display: inline-block;
-  width: 600px;
-}
-content {
-  background-color: #99bbe0;
-  max-height: 872px;
 }
 
-.mainLayout {
+/* content {
+  background-color: #99bbe0;
+  max-height: 872px;
+} */
+
+/* .mainLayout {
   display: inline-block;
-  color: white;
+  color: black;
   border-radius: 20px;
-  justify-content: space-evenly;
-  max-height: 812px;
+  /* justify-content: space-evenly; */
+/* max-height: 812px; */
+/* margin-top: 0; */
+/* border: solid 20px black; */
+/* } */
+
+.change {
+  max-height: 80px;
+}
+
+.changeBtns {
+  background-color: var(--bgcolor2);
+  border: none;
+  color: white;
+  width: 110px;
+  height: 30px;
+  font-size: 12pt;
+  max-height: 80px;
+  font-family: 'Chelsea Market';
+  border-radius: 150px 70px;
+  display: inline;
+  box-shadow: 2px 2px white;
+}
+
+.changeBtns:hover {
+  background-color: #27847c;
+  color: black;
+  box-shadow: 2px 2px black;
 }
 
 span {
   font-size: 72px;
+  text-shadow: 2px 2px white;
 }
+
 nav {
   list-style: none;
   color: white;
@@ -73,10 +103,13 @@ header {
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 140pt;
   margin-top: 0;
   /* padding-bottom: 40px; */
-  height: 200px;
+  text-shadow: 2px 2px white;
+  /* background-color: black; */
+  border-radius: 90%;
+  max-height: 100px;
 }
 
 h2 {
@@ -85,16 +118,19 @@ h2 {
   display: inline;
 }
 
-.gameContent {
+.gamePage {
+  width: 475px;
+  max-width: 475px;
 }
 
 .colorSquare {
   /* grid-template-columns: (3, auto); */
   /* grid-template-rows: 2; */
   width: 230px;
-  height: 75px;
+  height: 120px;
+  max-width: 460px;
   background-color: black;
-  border: solid 2px white;
+  /* border: solid 2px white; */
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -134,29 +170,7 @@ a:hover {
   transition: all 0.2s ease 0.2s;
 }
 
-#square0 {
-  background-color: var(--square0);
-}
-
-#square0:hover {
+.colorSquare:hover {
   opacity: 50%;
-}
-#square1 {
-  background-color: var(--square1);
-}
-
-#square2 {
-  background-color: var(--square2);
-}
-
-#square3 {
-  background-color: var(--square3);
-}
-
-#square4 {
-  background-color: var(--square4);
-}
-
-#square5 {
-  background-color: var(--square5);
+  border-radius: 20%;
 }

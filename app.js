@@ -5,22 +5,23 @@ let changeModeBtn = document.getElementById('changeModeBtn');
 let changeDiffBtn = document.getElementById('difficultyBtn');
 let squares = document.querySelectorAll('.colorSquare');
 let textGenerator = document.getElementById('textGeneratorId');
+let textGeneratorColor = document.getElementById('textGeneratorId').style.color;
 let questionGenerator1 = document.getElementById('questionGenerator1');
 let questionGenerator2 = document.getElementById('questionGenerator2');
 let gameAlive = true;
-let gameOver = true;
+let next = true;
 let score = 0;
 let userInput;
 // -----------------------------------------
 let gameDifficulty = ['Easy', 'Medium', 'Advanced'];
 let gameMode = ['Letters', 'Numbers', 'Fun'];
 let squareColor = [
-  '#0e9c2c',
-  '#fe0000',
-  '#0d0ddf',
-  '#7b48c9',
-  '#fa8116',
-  '#fff601'
+  'rgb(123, 72, 201)', //Purple
+  'rgb(14, 156, 44)', //Green
+  'rgb(250, 129, 22)', //Orange
+  'rgb(13, 13, 223)', //Blue
+  'rgb(255, 246, 1)', //Yellow
+  'rgb(254, 0, 0)' //Red
 ];
 
 // ------- ARRAY VARIABLES - EASY MODE
@@ -77,11 +78,14 @@ let randomNumberEasy = numbersEasy[numberRandomIndexEasy];
 // -----------------------------------------
 
 // ------ FUNCTIONS
-function changeMode() {
-  changeModeBtn.addEventListener('click', function () {
-    console.log('Change Mode button clicked!!');
-  });
-}
+// function changeDiff() {
+//   gameDifficulty = gameDifficulty[0];
+//   changeDiffBtn.addEventListener('click', function () {
+//     changeDiffBtn.innerText = 'EASY';
+//   });
+// }
+
+// changeDiff();
 
 function changeDifficulty() {
   changeDiffBtn.addEventListener('click', function () {
@@ -107,27 +111,7 @@ function startGame() {
   }
 }
 
-function randomLettersEasy() {
-  for (let letter = 0; letter < lettersEasy.length; letter++)
-    textGenerator.innerText = randomLetterEasy;
-  textGenerator.style.color = randomSquare;
-  if (randomLetter === randomLetter) {
-    questionGenerator1.innerText = 'What';
-    questionGenerator2.innerText = 'is the LETTER?';
-  }
-}
-
-function randomLettersMedium() {
-  for (let letter = 0; letter < lettersEasy.length; letter++)
-    textGenerator.innerText = randomLetter;
-  textGenerator.style.color = randomSquare;
-  if (randomLetterEasy === randomLetterEasy) {
-    questionGenerator1.innerText = 'What';
-    questionGenerator2.innerText = 'is the LETTER?';
-  }
-}
-
-randomLettersEasy();
+// randomLettersEasy(); // Calling function
 
 // function randomNumbers() {
 //   for (let num = 0; num < numbers.length; num++)
@@ -145,5 +129,33 @@ randomLettersEasy();
 //     if (randomLetter = )
 // }
 // }
+// randomLettersEasy();
 
 // ------ EVENT LISTENERS
+// squares[0].style.backgroundColor = squareColor[0];
+// squares[1].style.backgroundColor = squareColor[1];
+// squares[2].style.backgroundColor = squareColor[2];
+// squares[3].style.backgroundColor = squareColor[3];
+// squares[4].style.backgroundColor = squareColor[4];
+// squares[5].style.backgroundColor = squareColor[5];
+
+function randomLettersEasy() {
+  textGenerator.innerText = randomLetterEasy;
+  textGenerator.style.color = randomSquare;
+  if (randomLetterEasy === randomLetterEasy) {
+    questionGenerator1.innerText = 'What';
+    questionGenerator2.innerText = 'is the LETTER?';
+  }
+}
+
+for (let i = 0; i < squares.length; i++) {
+  randomLettersEasy();
+  squares[i].style.backgroundColor = squareColor[i];
+  squares[i].addEventListener('click', function () {
+    // while (squareColor[i] !== textGeneratorColor) {
+
+    if (squareColor[i] == textGenerator.style.color) {
+      randomLettersEasy();
+    }
+  });
+}
