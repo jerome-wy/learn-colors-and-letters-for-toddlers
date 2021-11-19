@@ -1,68 +1,98 @@
+:root {
+  --bgcolor: #7090b1;
+  --square0: #0e9c2c;
+  --square1: #fe0000;
+  --square2: #0d0ddf;
+  --square3: #7b48c9;
+  --square4: #fa8116;
+  --square5: #fff601;
+}
+
 @media (max-width: 375px) {
   img.responsive {
     width: 100%;
   }
+
+  .container {
+    max-width: 375px;
+    max-height: 812px;
+  }
 }
 
-
 body {
-  background-color: #7090b1;
+  background-color: var(--bgcolor);
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
+  font-family: 'Chelsea Market';
 }
 
 #banner {
-  width: 400px;
+  max-width: 98%;
 }
 
 .container {
-  background-color: #7090b1;
-  grid-template-columns: (1, auto);
-  grid-template-rows: 2;
+  /* background-color: #7090b1; */
+  /* grid-template-columns: (1, auto);
+  grid-template-rows: 3; */
   /* border: solid 5px black; */
   margin: 0 auto;
-  height: 600px;
   width: 90vw;
   max-height: 95vh;
   max-width: 95vw;
+  border: solid 1px black;
+  display: inline-block;
+  width: 600px;
 }
 content {
   background-color: #99bbe0;
+  max-height: 872px;
 }
 
 .mainLayout {
   display: inline-block;
   color: white;
   border-radius: 20px;
-
+  justify-content: space-evenly;
+  max-height: 812px;
 }
 
+span {
+  font-size: 72px;
+}
 nav {
   list-style: none;
   color: white;
   padding: 20px;
-  background-color: #7090b1;    
+  background-color: #7090b1;
   max-width: 350px;
 }
 
 header {
+  margin: 0;
 }
 
 h1 {
-  font-size: 200pt;
+  font-size: 200px;
   margin-top: 0;
+  /* padding-bottom: 40px; */
+  height: 200px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 40px;
+  display: inline;
 }
 
 .gameContent {
-
-
 }
 
 .colorSquare {
-  grid-template-columns: (3, auto);
-  grid-template-rows: 2;
-  width: 293.33px;
-  height: 100px;
+  /* grid-template-columns: (3, auto); */
+  /* grid-template-rows: 2; */
+  width: 230px;
+  height: 75px;
   background-color: black;
   border: solid 2px white;
   display: inline-block;
@@ -82,7 +112,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  /* color: black; */
 }
 
 .navMenu {
@@ -96,5 +126,37 @@ a:hover {
 }
 
 .navMenu:hover {
-  background-color: #c0dad7;  
+  background-color: #c0dad7;
+  color: black;
+  cursor: pointer;
+  width: 110%;
+  justify-content: center;
+  transition: all 0.2s ease 0.2s;
+}
+
+#square0 {
+  background-color: var(--square0);
+}
+
+#square0:hover {
+  opacity: 50%;
+}
+#square1 {
+  background-color: var(--square1);
+}
+
+#square2 {
+  background-color: var(--square2);
+}
+
+#square3 {
+  background-color: var(--square3);
+}
+
+#square4 {
+  background-color: var(--square4);
+}
+
+#square5 {
+  background-color: var(--square5);
 }
