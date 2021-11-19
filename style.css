@@ -1,5 +1,9 @@
 @media (max-width: 375px) {
+  img.responsive {
+    width: 100%;
+  }
 }
+
 
 body {
   background-color: #7090b1;
@@ -7,11 +11,15 @@ body {
   justify-content: center;
 }
 
+#banner {
+  width: 400px;
+}
+
 .container {
   background-color: #7090b1;
   grid-template-columns: (1, auto);
   grid-template-rows: 2;
-  border: solid 5px black;
+  /* border: solid 5px black; */
   margin: 0 auto;
   height: 600px;
   width: 90vw;
@@ -25,22 +33,41 @@ content {
 .mainLayout {
   display: inline-block;
   color: white;
-  border: solid 5px black;
+  border-radius: 20px;
+
 }
 
 nav {
   list-style: none;
   color: white;
   padding: 20px;
-  background-color: #99bbe0;
-  height: 50em;
-  width: 25em;
+  background-color: #7090b1;    
+  max-width: 350px;
 }
 
 header {
 }
 
 h1 {
+  font-size: 200pt;
+  margin-top: 0;
+}
+
+.gameContent {
+
+
+}
+
+.colorSquare {
+  grid-template-columns: (3, auto);
+  grid-template-rows: 2;
+  width: 293.33px;
+  height: 100px;
+  background-color: black;
+  border: solid 2px white;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -60,7 +87,14 @@ a:hover {
 
 .navMenu {
   background-color: #9bc4c0;
+  color: white;
   padding: 20px;
   font-size: 20px;
   border-radius: 15px;
+  border: none;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.navMenu:hover {
+  background-color: #c0dad7;  
 }
