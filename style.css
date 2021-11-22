@@ -7,6 +7,14 @@
   --square3: rgb(13, 13, 223);
   --square4: rgb(255, 246, 1);
   --square5: rgb(254, 0, 0);
+  --funbgcolor: #102e4d;
+  --funbgcolor2: #0f2c4b;
+  --funsquare0: rgb(52, 38, 75);
+  --funsquare1: rgb(32, 83, 45);
+  --funsquare2: rgb(109, 74, 44);
+  --funsquare3: rgb(32, 32, 92);
+  --funsquare4: rgb(90, 88, 26);
+  --funsquare5: rgb(100, 27, 27);
 }
 
 @media (max-width: 375px) {
@@ -24,9 +32,13 @@ body {
   background-color: var(--bgcolor);
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-family: 'Chelsea Market';
   max-height: 872px;
+}
+
+.darkMode {
+  background-color: #102e4d;
 }
 
 #banner {
@@ -65,7 +77,8 @@ body {
   max-height: 80px;
 }
 
-.changeBtns {
+.changeBtns,
+.diffBtns {
   background-color: var(--bgcolor2);
   border: none;
   color: white;
@@ -77,6 +90,12 @@ body {
   border-radius: 150px 70px;
   display: inline;
   box-shadow: 2px 2px white;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+#userInput {
+  width: 130px;
 }
 
 .changeBtns:hover {
@@ -85,8 +104,26 @@ body {
   box-shadow: 2px 2px black;
 }
 
+#lettersBtn:hover {
+  background-color: #c5a0e5;
+  color: black;
+  box-shadow: 2px 2px black;
+}
+
+#numbersBtn:hover {
+  background-color: #7f43b5;
+  color: black;
+  box-shadow: 2px 2px black;
+}
+
+#wordsBtn:hover {
+  background-color: #49159a;
+  color: black;
+  box-shadow: 2px 2px black;
+}
+
 span {
-  font-size: 72px;
+  font-size: 30px;
   text-shadow: 2px 2px white;
 }
 
@@ -103,19 +140,22 @@ header {
 }
 
 h1 {
-  font-size: 140pt;
+  font-size: 170pt;
   margin-top: 0;
   /* padding-bottom: 40px; */
   text-shadow: 2px 2px white;
-  /* background-color: black; */
-  border-radius: 90%;
-  max-height: 100px;
+  height: 100px;
+  max-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 h2 {
-  margin-top: 0;
-  font-size: 40px;
+  margin: 0;
+
+  font-size: 25px;
   display: inline;
+  color: black;
 }
 
 .gamePage {
@@ -124,16 +164,17 @@ h2 {
 }
 
 .colorSquare {
-  /* grid-template-columns: (3, auto); */
-  /* grid-template-rows: 2; */
+  grid: repeat(2, 3);
   width: 230px;
   height: 120px;
   max-width: 460px;
   background-color: black;
   /* border: solid 2px white; */
   display: inline-block;
+  box-shadow: 2px 2px white;
   margin: 0;
   padding: 0;
+  border-radius: 150px 70px;
 }
 
 p {
@@ -172,5 +213,25 @@ a:hover {
 
 .colorSquare:hover {
   opacity: 50%;
-  border-radius: 20%;
+  border-radius: 150px 70px;
+  cursor: pointer;
+}
+
+.colorSquare:active {
+  opacity: 50%;
+  border-radius: 150px 70px;
+  cursor: pointer;
+}
+
+#userInput {
+  width: 220px;
+  padding-left: 20px;
+}
+
+#userInput:hover {
+  background-color: lightgray;
+}
+
+.colorSquare:active {
+  opacity: 90%;
 }

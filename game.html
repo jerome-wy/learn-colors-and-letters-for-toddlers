@@ -23,39 +23,46 @@
       <section class="gamePage">
         
           <header>
-            <img src="https://i.imgur.com/BdkLoU0.png" id="banner">
+            <img src="https://i.imgur.com/VfidZYZ.png" id="banner">
             <div class="change">
-              <button class="changeBtns" id="changeModeBtn">MODE</button>
+              <button class="changeBtns" id="darkModeBtn">DARK MODE</button>
        
-              <button class="changeBtns" id="changeDiffBtn">DIFFICULTY</button>
+              <button class="changeBtns" id="changeDiffBtn">MODE</button>
+              <button class="changeBtns" id="addWordBtn">ADD WORD!</button><br><br>
 
+                <button class="diffBtns" id="lettersBtn">LETTERS</button>
+                <button class="diffBtns" id="numbersBtn">NUMBERS</button>
+                <button class="diffBtns" id="wordsBtn">WORDS</button>
+                <input type="text" placeholder="Type a 3-letter word!" class="changeBtns" id="userInputForm" maxlength="3"><button class="changeBtns" id="pushTextBtn">Add it!</button></input>
             </div>
           </header>
+          <br><br>
+          <h2 class="question" id="questionGenerator1">
+            <!--SPECIFIC QUESTION 1 GOES HERE-->
+          </h2>
+          <h2 class="colorText"> 
+            <span id="color" style="color: var(--square1)">C</span>
+            <span id="color" style="color: var(--square3)">O</span>
+            <span id="color" style="color: var(--square5)">L</span>
+            <span id="color" style="color: var(--square0)">O</span>
+            <span id="color" style="color: var(--square2)">R</span>
+          </h2>
+          
+          <h2 class="question" id="questionGenerator2">
+            <!--SPECIFIC QUESTION 2 GOES HERE-->
+          </h2><br>
 
             <h1 class="textGenerator" id="textGeneratorId">
               <!--RANDOMIZED TEXT GOES HERE-->
-              
-            </h1>
-         
-<br><br>
-            <h2 class="question" id="questionGenerator1">
-              <!--SPECIFIC QUESTION 1 GOES HERE-->
-            </h2>
-            <br>
-            <h2> 
-              <span style="color: var(--square1)">C </span>
-              <span style="color: var(--square3)">O </span>
-              <span style="color: var(--square5)">L </span>
-              <span style="color: var(--square0)">O </span>
-              <span style="color: var(--square2)">R </span>
-            </h2><br>
+            </h1><br>
             
-            <h2 class="question" id="questionGenerator2">
-              <!--SPECIFIC QUESTION 2 GOES HERE-->
-            </h2>
+         
 
-        <br>
-              <div class="colorSquare" id="square0">
+            <h2 class="answer" id="answer">
+              
+            </h2><br><br>
+        <div class="allColorSquares">
+         <div class="colorSquare" id="square0">
 
               </div>
               <div class="colorSquare" id="square1">
@@ -72,7 +79,7 @@
               </div>
               <div class="colorSquare" id="square5">
               </div>
-           
+            </div>
       </section>
     </div>
 
