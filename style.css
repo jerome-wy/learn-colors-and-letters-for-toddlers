@@ -77,6 +77,10 @@ b {
   max-height: 80px;
 }
 
+u {
+  text-decoration: none;
+  color: var(--funbgcolor);
+}
 .changeBtns,
 .diffBtns {
   background-color: var(--bgcolor2);

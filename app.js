@@ -262,6 +262,12 @@ function validateWordsGame() {
     });
   }
 }
+
+function validateScore() {
+  if (validationLettersGame() === true) {
+    score = score + 5;
+  }
+}
 //declare variable in if statement above for "match" - use switch case to match bgcolor -- put rgb in the switch case
 //
 
