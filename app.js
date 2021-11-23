@@ -18,6 +18,7 @@ let questionGenerator1 = document.getElementById('questionGenerator1');
 let questionGenerator2 = document.getElementById('questionGenerator2');
 let welcomeText = document.getElementById('welcomeText');
 let answer = document.getElementById('answer');
+let levelWinner = document.querySelectorAll('levelWinner');
 let gameAlive = true;
 let next = true;
 let score = 0;
@@ -149,6 +150,7 @@ function showEverything() {
   questionGenerator1.innerText = 'What';
   questionGenerator2.innerText = 'is it?';
   answer.style.display = 'inline-block';
+  disableButtons(false);
 }
 
 function showWordsEverything() {
@@ -204,6 +206,12 @@ function generateWords() {
   showEverything();
 }
 
+function disableButtons(disabled) {
+  for (let i = 0; i < squares.length; i++) {
+    squares[i].disabled = disabled;
+  }
+}
+
 function validateLettersGame() {
   for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = squareColor[i];
@@ -211,9 +219,10 @@ function validateLettersGame() {
       if (squareColor[i] === textGenerator.style.color) {
         answer.innerText = 'You are correct!';
         scoreDisplay.style.display = 'inline-block';
-        score = score + 1;
+        score++;
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextLetterIndexBtn.style.display = 'inline-block';
+        disableButtons(true);
         gameAlive = false;
       }
       if (squareColor[i] != textGenerator.style.color) {
@@ -231,10 +240,11 @@ function validateNumbersGame() {
       if (squareColor[i] === textGenerator.style.color) {
         squares[i].style.color = squareColor[i];
         answer.innerText = 'You are correct!';
-        score = score + 2;
+        score++;
         scoreDisplay.style.display = 'inline-block';
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextNumberIndexBtn.style.display = 'inline-block';
+        disableButtons(true);
         gameAlive = false;
       }
       if (squareColor[i] != textGenerator.style.color) {
@@ -251,16 +261,18 @@ function validateWordsGame() {
       if (squareColor[i] === textGenerator.style.color) {
         squares[i].style.color = squareColor[i];
         answer.innerText = 'You are correct!';
-        score = score + 5;
+        score++;
         scoreDisplay.style.display = 'inline-block';
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextWordIndexBtn.style.display = 'inline-block';
+        disableButtons(true);
         gameAlive = false;
       }
       if (squareColor[i] != textGenerator.style.color) {
         answer.innerText = 'Try again!';
         gameAlive = true;
       }
+      squares[i].style.border = '';
     });
   }
 }
@@ -270,8 +282,6 @@ function validateScore() {
     score = score + 5;
   }
 }
-//declare variable in if statement above for "match" - use switch case to match bgcolor -- put rgb in the switch case
-//
 
 //-----------------------------------------
 
@@ -280,10 +290,6 @@ function startLettersGame() {
   generateLetters();
   validateLettersGame();
 }
-
-// need a better way to check 'winner function'
-// check 'win condition'
-// take paramater of cb and can call any of the generateLetter functions to reuse
 
 function startNumbersGame() {
   generateNumbers();
@@ -295,11 +301,10 @@ function startWordsGame() {
   validateWordsGame();
 }
 
-//------------------------------, ,-----------
+//-----------------------------------------
 
 //---- EVENT LISTENERS----------------------
 changeModeBtn.addEventListener('click', function () {
-  // hideEverything();
   lettersBtn.style.display = 'inline-block';
   numbersBtn.style.display = 'inline-block';
   wordsBtn.style.display = 'inline-block';
