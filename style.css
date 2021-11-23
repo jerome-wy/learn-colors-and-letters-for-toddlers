@@ -28,6 +28,10 @@
     height: 75%;
   }
 }
+.darkMode {
+  background-color: #102e4d;
+  color: gray;
+}
 
 body {
   background-color: var(--bgcolor);
@@ -46,9 +50,6 @@ body {
 b {
   color: #28837b;
   text-shadow: 1px 1px black;
-}
-.darkMode {
-  background-color: #102e4d;
 }
 
 #banner {

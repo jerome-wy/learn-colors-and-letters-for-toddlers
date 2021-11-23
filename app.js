@@ -197,6 +197,8 @@ function generateNumbers() {
 function generateWords() {
   wordsRandomIndex = [Math.floor(Math.random() * wordsArray.length)];
   randomWord = wordsArray[wordsRandomIndex];
+  squareRandomIndex = [Math.floor(Math.random() * squareColor.length)];
+  randomSquare = squareColor[squareRandomIndex];
   textGenerator.innerText = randomWord;
   textGenerator.style.color = randomSquare;
   showEverything();
