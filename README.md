@@ -29,7 +29,7 @@ A random letter in the Alphabet will populate and the user must select the color
 
 **Add a Word**: Press the Add Word button and type in a 3-Letter word that will join the game for you to select from!
 
-- **[Trello Board]**(https://trello.com/b/nQPuHwBT/baby-learning-game)
+- Link to [Trello Board](https://trello.com/b/nQPuHwBT/baby-learning-game)
 
 ---
 
