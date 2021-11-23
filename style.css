@@ -291,3 +291,10 @@ a:hover {
 #backButton:hover {
   background-color: red;
 }
+
+img:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 70%;
+}
