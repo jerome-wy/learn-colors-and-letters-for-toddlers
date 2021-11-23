@@ -30,9 +30,8 @@ ToddLearn was designed for a small human to be able to play the game with no iss
 - **Add a Word**:
 Press the Add Word button and type in a 3-Letter word that will join the game for you to select from! 
 
-**Trello Board**:
 
-#### [Trello](https://trello.com/b/nQPuHwBT/baby-learning-game)
+- **[Trello Board]**(https://trello.com/b/nQPuHwBT/baby-learning-game)
 
 ---
 
