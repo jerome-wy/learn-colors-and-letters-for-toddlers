@@ -11,7 +11,7 @@
 
 ### Description
 
-##### I plan to build a Web Browser Game specifically for Toddlers. I have a toddler who LOVES to learn new things. Toddlers are surprisingly very intuitive when it comes to smartphones. I thought it would be a great idea to make something for two things I love: my son and coding. 
+ToddLearn is a very simple game that I created for my own Toddler. Toddlers are so curious and always want to get into a phone or tablet. I thought it would be pretty cool to make a game specifically for him to play and learn at the same time. 
 
 ---
 
@@ -23,11 +23,11 @@
 ToddLearn was designed for a small human to be able to play the game with no issues. Simply choose a Mode you would like to start with:
 Letters: A random letter in the Alphabet will populate and the user must select the color it is.
 
-Numbers: A random number between 1 - 100 will populate and the user must select the color it is.
+**Numbers**: A random number between 1 - 100 will populate and the user must select the color it is.
 
-Words: A random word will populate and the user must select the color it is.
+**Words**: A random word will populate and the user must select the color it is.
 
-Add a Word:
+**Add a Word**:
 Press the Add Word button and type in a 3-Letter word that will join the game for you to select from! 
 
 **Trello Board**:
@@ -49,3 +49,6 @@ Press the Add Word button and type in a 3-Letter word that will join the game fo
 ### **_Credits_**
 
 General Assembly Instructors & IAs :)
+[CSS Playground](https://css-playground.com/view/55/css-transition-playground-with-hover)
+[CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
