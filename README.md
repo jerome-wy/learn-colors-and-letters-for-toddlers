@@ -1,5 +1,5 @@
 # ToddLearn - Learn Colors & Letters for Toddlers - Browser Game
-![ToddLearn Banner](![image](https://user-images.githubusercontent.com/93467019/143051294-7b3166dc-e071-4e1f-b9c6-68b8089cbaaa.png))
+![image](https://user-images.githubusercontent.com/93467019/143051294-7b3166dc-e071-4e1f-b9c6-68b8089cbaaa.png)
 
 ## Date: 11/17/2021
 
