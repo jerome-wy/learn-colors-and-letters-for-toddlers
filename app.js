@@ -207,10 +207,9 @@ function validateLettersGame() {
     squares[i].style.backgroundColor = squareColor[i];
     squares[i].addEventListener('click', function () {
       if (squareColor[i] === textGenerator.style.color) {
-        squares[i].style.color = squareColor[i];
         answer.innerText = 'You are correct!';
-        // score += parseInt(score + 1);
         scoreDisplay.style.display = 'inline-block';
+        score = score + 1;
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextLetterIndexBtn.style.display = 'inline-block';
         gameAlive = false;
@@ -230,7 +229,7 @@ function validateNumbersGame() {
       if (squareColor[i] === textGenerator.style.color) {
         squares[i].style.color = squareColor[i];
         answer.innerText = 'You are correct!';
-        // score += parseInt(score + 1);
+        score = score + 2;
         scoreDisplay.style.display = 'inline-block';
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextNumberIndexBtn.style.display = 'inline-block';
@@ -250,7 +249,7 @@ function validateWordsGame() {
       if (squareColor[i] === textGenerator.style.color) {
         squares[i].style.color = squareColor[i];
         answer.innerText = 'You are correct!';
-        // score += parseInt(score + 1);
+        score = score + 5;
         scoreDisplay.style.display = 'inline-block';
         scoreDisplay.innerText = 'SCORE: ' + score;
         nextWordIndexBtn.style.display = 'inline-block';

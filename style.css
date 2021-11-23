@@ -17,14 +17,15 @@
   --funsquare5: rgb(100, 27, 27);
 }
 
-@media (max-width: 375px) {
-  img.responsive {
-    width: 100%;
+@media only screen and (max-width: 400px) {
+  body {
+    width: 75%;
   }
+}
 
-  .container {
-    max-width: 475px;
-    max-height: 812px;
+@media only screen and (max-height: 800px) {
+  body {
+    height: 75%;
   }
 }
 
@@ -144,6 +145,7 @@ nav {
 ul {
   list-style: none;
 }
+
 header {
   margin: 0;
 }
@@ -161,7 +163,6 @@ h1 {
 
 h2 {
   margin: 0;
-
   font-size: 25px;
   display: inline;
   color: black;
@@ -170,6 +171,7 @@ h2 {
 .gamePage {
   width: 475px;
   max-width: 475px;
+  font-size: 20px;
 }
 
 .colorSquare {
@@ -185,15 +187,37 @@ h2 {
   border-radius: 150px 70px;
 }
 
-p {
+#instructions {
+  text-align: left;
+}
+
+#instructionsList {
+  text-align: left;
+}
+
+#referencesList {
+  text-align: left;
 }
 
 b {
+  font-size: 28px;
+  text-shadow: 1px 1px white;
+}
+
+#instructionsTitle {
+  font-size: 36px;
+  text-decoration: underline;
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+}
+
+a:hover {
+  color: var(--funbgcolor);
 }
 
 .navMenu {

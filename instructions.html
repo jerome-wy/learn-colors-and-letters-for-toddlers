@@ -12,27 +12,42 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poller+One&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="container">
-      <section class="homePage">
-        <header><img src="https://i.imgur.com/BdkLoU0.png"></header>
+    <div class="container"> 
+     
+      <section class="gamePage">
+        
+          <header>
+            <img src="https://i.imgur.com/VfidZYZ.png" id="banner">
+            <a href="game.html"><button class="navMenu" id="startGameBtn">START GAME</button></A>
 
-        <div class="mainLayout" id="home">
+          <br><br>
+           <h2 class="instructionsClass" id="instructionsTitle">Instructions</h2><BR>
+           <b>This game is VERY simple!</b>
+           <p id="instructions">
+             <br>
+             ToddLearn was designed for a small human to be able to play the game with no issues. Simply choose a Mode you would like to start with: <br>
+             <ol id='instructionsList'>
 
-        <content class="content" id="instructionsPage">
-          <p id="instructions">
-            Hello!!!
+               <li><b>Letters:</b> A random letter in the Alphabet will populate and the user must select the color it is.</li><br>
+               <li><b>Numbers:</b> A random number between 1 - 100 will populate and the user must select the color it is.</li><br>
+               <li><b>Words:</b> A random word will populate and the user must select the color it is.</li><br>
+               <ul>
+                 <li><b>Add a Word:</b></li> Press the <i>Add Word</i> button and type in a 3-Letter word that will join the game for you to select from!
+               </ul>
+             </ol>
+
+           
           </p>
           
-
-        </content>
-        </div>
-        <div class="content"></div>
       </section>
+    </div>
 
-
-      </div>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
