@@ -21,13 +21,13 @@ ToddLearn is a very simple game that I created for my own Toddler. Toddlers are 
 ***This game is VERY simple!***
 
 ToddLearn was designed for a small human to be able to play the game with no issues. Simply choose a Mode you would like to start with:
-Letters: A random letter in the Alphabet will populate and the user must select the color it is.
+- **Letters**: A random letter in the Alphabet will populate and the user must select the color it is.
 
-**Numbers**: A random number between 1 - 100 will populate and the user must select the color it is.
+- **Numbers**: A random number between 1 - 100 will populate and the user must select the color it is.
 
-**Words**: A random word will populate and the user must select the color it is.
+- **Words**: A random word will populate and the user must select the color it is.
 
-**Add a Word**:
+- **Add a Word**:
 Press the Add Word button and type in a 3-Letter word that will join the game for you to select from! 
 
 **Trello Board**:
