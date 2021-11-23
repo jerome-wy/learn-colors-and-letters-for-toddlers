@@ -27,14 +27,18 @@
             <div class="change">
               <button class="changeBtns" id="darkModeBtn">DARK MODE</button>
        
-              <button class="changeBtns" id="changeDiffBtn">MODE</button>
+              <button class="changeBtns" id="changeModeBtn">MODE</button>
               <button class="changeBtns" id="addWordBtn">ADD WORD!</button><br><br>
 
                 <button class="diffBtns" id="lettersBtn">LETTERS</button>
                 <button class="diffBtns" id="numbersBtn">NUMBERS</button>
                 <button class="diffBtns" id="wordsBtn">WORDS</button>
                 <input type="text" placeholder="Type a 3-letter word!" class="changeBtns" id="userInputForm" maxlength="3"><button class="changeBtns" id="pushTextBtn">Add it!</button></input>
-            </div>
+
+                <span id="welcomeText">Please click on <b>Mode</b><br> and select your Game!</span>
+                <span id="scoreDisplay">
+
+                </span>            </div>
           </header>
           <br><br>
           <h2 class="question" id="questionGenerator1">
@@ -45,23 +49,29 @@
             <span id="color" style="color: var(--square3)">O</span>
             <span id="color" style="color: var(--square5)">L</span>
             <span id="color" style="color: var(--square0)">O</span>
-            <span id="color" style="color: var(--square2)">R</span>
+            <span id="color" style="color: var(--square2)">R</span>&nbsp;
           </h2>
           
-          <h2 class="question" id="questionGenerator2">
+          <h2 class="question" id="questionGenerator2"> 
             <!--SPECIFIC QUESTION 2 GOES HERE-->
+
           </h2><br>
+
 
             <h1 class="textGenerator" id="textGeneratorId">
               <!--RANDOMIZED TEXT GOES HERE-->
             </h1><br>
             
-         
+
 
             <h2 class="answer" id="answer">
               
-            </h2><br><br>
-        <div class="allColorSquares">
+            </h2><br>
+
+            <button class="changeBtns" id="nextLetterIndexBtn">Next Letter</button>
+            <button class="changeBtns" id="nextNumberIndexBtn">Next Number</button>
+            <button class="changeBtns" id="nextWordIndexBtn">Next Word</button>
+        <br><br><div class="allColorSquares">
          <div class="colorSquare" id="square0">
 
               </div>

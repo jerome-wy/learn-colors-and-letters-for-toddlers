@@ -32,11 +32,20 @@ body {
   background-color: var(--bgcolor);
   text-align: center;
   justify-content: center;
-  /* margin: 0 auto; */
   font-family: 'Chelsea Market';
+  color: black;
   max-height: 872px;
 }
 
+#welcomeText {
+  color: white;
+  font-size: 40px;
+}
+
+b {
+  color: #28837b;
+  text-shadow: 1px 1px black;
+}
 .darkMode {
   background-color: #102e4d;
 }
@@ -46,32 +55,22 @@ body {
 }
 
 .container {
-  /* background-color: #7090b1; */
-  /* grid-template-columns: (1, auto);
-  grid-template-rows: 3; */
-  /* border: solid 5px black; */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   margin: 0 auto;
   width: 90vw;
   max-height: 95vh;
   max-width: 475px;
-  /* border: solid 1px black; */
   display: inline-block;
 }
 
-/* content {
-  background-color: #99bbe0;
-  max-height: 872px;
-} */
-
-/* .mainLayout {
-  display: inline-block;
-  color: black;
-  border-radius: 20px;
-  /* justify-content: space-evenly; */
-/* max-height: 812px; */
-/* margin-top: 0; */
-/* border: solid 20px black; */
-/* } */
+.mainLayout {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
 
 .change {
   max-height: 80px;
@@ -94,8 +93,16 @@ body {
   transition-duration: 0.5s;
 }
 
-#userInput {
-  width: 130px;
+#nextNumberIndexBtn {
+  width: 150px;
+}
+#userInputForm {
+  width: 200px;
+  padding-left: 10px;
+}
+
+#userInputForm:hover {
+  background-color: lightgray;
 }
 
 .changeBtns:hover {
@@ -122,19 +129,21 @@ body {
   box-shadow: 2px 2px black;
 }
 
-span {
+#colorText {
   font-size: 30px;
   text-shadow: 2px 2px white;
 }
 
 nav {
-  list-style: none;
   color: white;
   padding: 20px;
   background-color: #7090b1;
   max-width: 350px;
 }
 
+ul {
+  list-style: none;
+}
 header {
   margin: 0;
 }
@@ -169,7 +178,6 @@ h2 {
   height: 120px;
   max-width: 460px;
   background-color: black;
-  /* border: solid 2px white; */
   display: inline-block;
   box-shadow: 2px 2px white;
   margin: 0;
@@ -188,10 +196,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  /* color: black; */
-}
-
 .navMenu {
   background-color: #9bc4c0;
   color: white;
@@ -206,9 +210,10 @@ a:hover {
   background-color: #c0dad7;
   color: black;
   cursor: pointer;
-  width: 110%;
   justify-content: center;
-  transition: all 0.2s ease 0.2s;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .colorSquare:hover {
