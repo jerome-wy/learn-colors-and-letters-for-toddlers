@@ -270,3 +270,24 @@ a:hover {
 .colorSquare:active {
   opacity: 90%;
 }
+
+#backButton {
+  width: 30px;
+  background-color: var(--bgcolor2);
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 12pt;
+  max-height: 80px;
+  font-family: 'Chelsea Market';
+  border-radius: 150px 70px;
+  display: inline;
+  box-shadow: 2px 2px white;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+#backButton:hover {
+  background-color: red;
+}

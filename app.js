@@ -305,6 +305,7 @@ function startWordsGame() {
 
 //---- EVENT LISTENERS----------------------
 changeModeBtn.addEventListener('click', function () {
+  hideEverything();
   lettersBtn.style.display = 'inline-block';
   numbersBtn.style.display = 'inline-block';
   wordsBtn.style.display = 'inline-block';
