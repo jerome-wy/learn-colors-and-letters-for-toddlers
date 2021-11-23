@@ -5,15 +5,13 @@
 
 ### By: Jerome Wy
 
-#### [LinkedIn](https://www.linkedin.com/in/jerome-wy-367bb85b/) [Github](https://github.com/jerome-wy)
+#### [LinkedIn](https://www.linkedin.com/in/jerome-wy-367bb85b/) | [Github](https://github.com/jerome-wy)
 
 ---
 
 ### Description
 
 ##### I plan to build a Web Browser Game specifically for Toddlers. I have a toddler who LOVES to learn new things. Toddlers are surprisingly very intuitive when it comes to smartphones. I thought it would be a great idea to make something for two things I love: my son and coding. 
-
-
 
 ---
 
