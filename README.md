@@ -1,4 +1,5 @@
 ![image](https://user-images.githubusercontent.com/93467019/143051294-7b3166dc-e071-4e1f-b9c6-68b8089cbaaa.png)
+git
 
 # ToddLearn - Learn Colors & Letters for Toddlers - Browser Game
 
@@ -35,5 +36,7 @@ A random letter in the Alphabet will populate and the user must select the color
 ### **_Credits_**
 
 [CSS Playground](https://css-playground.com/view/55/css-transition-playground-with-hover)
+
 [CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
